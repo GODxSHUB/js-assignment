@@ -1,0 +1,80 @@
+// 1.
+
+function sum(a,b){
+    let c = a+b
+    console.log(c)
+}
+let s = "s"
+let b = "k"
+sum(s,b)
+
+// // 2.
+
+function canvote(age){
+    if(age>=18){
+        console.log("You can vote ur age is",age)
+    }else{
+        console.log("You cannot vote ur age is ",age)
+    }
+}
+const age = 18
+const age1 = 22
+const age2 = 15
+canvote(age)
+canvote(age1)
+canvote(age2)
+
+
+// // 3.
+
+function gretting(a,b){
+    console.log("Hi "+ a +" " + "ur age is " + b)
+}
+const user = {"name": "shubham","age":19}
+gretting(user["name"],user["age"])
+gretting(user.name,user.age)
+
+
+// 4.
+
+function gretting(a,b,c){
+    if((c=="M")&&(b>=18)){
+        console.log("Hi "+"Mr"+" "+ a +" " + "ur age is " + b)
+        console.log("You can vote also")
+    }
+    else if((c=="F")&&(b>=18)){
+        console.log("Hi "+"Mrs"+" "+ a +" " + "ur age is " + b)
+        console.log("You can vote also")
+    }
+    else if((c=="F")&&(b<18)){
+        console.log("Hi "+"Mrs"+" "+ a +" " + "ur age is " + b)
+        console.log("You cannot vote ")
+    }
+    else if((c=="M")&&(b<18)){
+        console.log("Hi "+"Mr"+" "+ a +" " + "ur age is " + b)
+        console.log("You cannot vote ")
+    }
+}
+
+//let arr[{"name" : "Shubham","age":19,"gender":"M"},{"name" : "Anu","age":19,"gender":"F"}]
+
+let user1 = {"name" : "Shubham","age":19,"gender":"M"}
+let user2 = {"name" : "Anu","age":16,"gender":"F"}
+
+gretting(user1.name,user1.age,user1.gender)
+
+gretting(user2.name,user2.age,user2.gender)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
